@@ -7,5 +7,13 @@ public class Animal
     public string Category { get; set; }
     public double Weight { get; set; }
     public string FurColor { get; set; }
-    
+
+    public void Copy(Animal animal)
+    {
+        Id = animal.Id;
+        Name = animal.Name;
+        Category = animal.Category;
+        Weight = animal.Weight;
+        FurColor = animal.FurColor;
+    }
 }
